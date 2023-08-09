@@ -1,0 +1,12 @@
+C:\Users\marse\source\repos\SIP-G-Edit\bin\Debug\SIP-G-Edit.exe.config
+C:\Users\marse\source\repos\SIP-G-Edit\bin\Debug\SIP-G-Edit.exe
+C:\Users\marse\source\repos\SIP-G-Edit\bin\Debug\SIP-G-Edit.pdb
+C:\Users\marse\source\repos\SIP-G-Edit\obj\Debug\SIP-G-Edit.csproj.AssemblyReference.cache
+C:\Users\marse\source\repos\SIP-G-Edit\obj\Debug\SIP-G-Edit.csproj.SuggestedBindingRedirects.cache
+C:\Users\marse\source\repos\SIP-G-Edit\obj\Debug\SIP_G_Edit.Form1.resources
+C:\Users\marse\source\repos\SIP-G-Edit\obj\Debug\SIP_G_Edit.Properties.Resources.resources
+C:\Users\marse\source\repos\SIP-G-Edit\obj\Debug\SIP-G-Edit.csproj.GenerateResource.cache
+C:\Users\marse\source\repos\SIP-G-Edit\obj\Debug\SIP-G-Edit.csproj.CoreCompileInputs.cache
+C:\Users\marse\source\repos\SIP-G-Edit\obj\Debug\SIP-G-Edit.exe
+C:\Users\marse\source\repos\SIP-G-Edit\obj\Debug\SIP-G-Edit.pdb
+C:\Users\marse\source\repos\SIP-G-Edit\obj\Debug\SIP_G_Edit.Form2.resources

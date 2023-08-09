@@ -1,0 +1,80 @@
+# This program allows your to text or speak to the assistant and get a responce to your answer as long as you are connected to the internet.
+
+# this will import openai library
+import openai
+import pyttsx3
+import speech_recognition as sr
+import random
+
+
+# This will allow your assistant to actually speak back to you. 
+def Speak(audio):
+  
+    # Assigns pyttsx3 module
+    engine = pyttsx3.init()
+
+
+    # Everything passed to this will be spoken by assistant.
+    engine.say(audio)
+    engine.runAndWait()
+
+
+def listening ():
+        
+
+    # this will notice you're speaking 
+    r = sr.Recognizer()
+
+    with sr.Microphone() as source:
+
+        r.pause_threshold = 0.5
+        Store_sounds = r.listen(source)
+        # use google api for voice reconition
+        Query = r.recognize_google(Store_sounds)
+
+    return Query
+
+
+
+
+    
+# this sets OpenAI API client, i get the api key from open api
+openai.api_key = ""
+
+# this is a infinate loop to ask questions indefinatly
+while True:
+    # Set up the model hello
+
+    model_engine = "text-davinci-003"
+    
+
+    
+    # this will setup mind to ask you a question
+    greeting = ["hello, ask a question", "hey, you can ask me something","I can do allot, ask me anything","whats up","hey, hey, ask me something","hey, whats up how are you, ask me something"]
+    c = random.choice(greeting)
+
+    Speak(c)
+    command = listening()
+    #Mind = input('I can do allot\nask me anything: ')  
+
+    if 'bye' in command or 'c u' in command:
+       break
+
+    # This is how MinD talks to you.
+    Mind_speaks = openai.Completion.create(
+        engine=model_engine,
+        prompt=command,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
+
+    # This will pull out information from your repsonce to use to answer.
+    speak_back = Mind_speaks.choices[0].text
+    
+    # This displays the responce from you question or statement 
+    Speak(speak_back)
+    #print(speak_back)
+
+
